@@ -10,7 +10,6 @@ function Step2() {
   const [val4, setVal4] = useState("");
 
   let chkValidation = () => {
-    <Link to="Step3"></Link>;
     if (val1 === "" || val2 === "" || val3 === "" || val4 === "") {
       alert("Fill out all ");
     } else {
@@ -22,9 +21,7 @@ function Step2() {
   return (
     <>
       <Link to="/">
-        {" "}
         <div className="flex justify-between p-5">
-          {" "}
           <h5>◀ Go Back</h5> <h5>Exit ✖</h5>
         </div>
       </Link>
@@ -34,11 +31,11 @@ function Step2() {
           Step # 2
         </h2>
         <h2 className=" flex justify-center text-3xl font-bold p-2">Details</h2>
-        <p className=" flex justify-center pt-2 text-gray-500 ">
+        <p className=" flex justify-center text-center pt-2 text-gray-500 ">
           We're thrilled at the bottom opportunity to help you grow your
           business online.
         </p>
-        <p className=" flex justify-center pb-6  text-gray-500 ">
+        <p className=" flex justify-center pb-6 text-center text-gray-500 ">
           Plesae let us know the best way to reach you.
         </p>
 
@@ -95,7 +92,7 @@ function Step2() {
             </Link>
           </div>
         </div>
-        <p className="  flex flex-col items-center justify-center text-gray-500 ">
+        <p className="  flex flex-col items-center justify-center text-center text-gray-500 ">
           We promise never to share your information or spam your inbox
         </p>
       </div>
